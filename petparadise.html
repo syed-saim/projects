@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>My Pet Paradise</title>
+        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Chartreux</h1>
+        <img src="download.jpeg" alt="Chartreux">
+        <p><b>Specie:</b> Cat</p>
+        <p><b>Age:</b> 1 Year</p>
+        <p id="initialText">Meet my beloved Chartreux cat, a charming and enigmatic feline companion who has captured my heart in countless ways. With his striking blue-gray fur and captivating amber eyes, he exudes an air of mystery and elegance that never fails to enchant those around him.
+            <br>What sets my Chartreux apart is not just his remarkable appearance, but also his endearing personality. He possesses a gentle and affectionate nature, always eager to curl up in my lap or offer a comforting purr when I need it most. His playful antics bring joy and laughter into my home, reminding me to appreciate the simple pleasures of life.
+            <br>But beyond his charm and companionship, there's something truly special about my Chartreux that resonates deeply with me. It's as if he understands me in a way that no one else does, offering unwavering loyalty and unconditional love that uplifts my spirits even on the darkest of days.
+            <br>In essence, my Chartreux isn't just a pet—he's a cherished member of my family, a source of endless comfort and companionship that I am grateful for each and every day.
+        </p>
+        <p><a href="#" id="LearnMoreBtn">Learn more</a></p>
+        <p id="MoreText">His presence brings a sense of calm and tranquility to our home, and his intuitive nature often seems to sense when I need a comforting nudge or a warm snuggle. Whether he's lounging in a sunbeam, chasing after toy mice, or simply gazing out the window with a serene expression, he brings a sense of joy and contentment to our lives that is truly irreplaceable.</p>
+
+        <script>
+            document.getElementById("LearnMoreBtn").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        var moreText = document.getElementById("MoreText");
+        if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            document.getElementById("LearnMoreBtn").innerText = "Show less";
+        } else {
+            moreText.style.display = "none";
+            document.getElementById("LearnMoreBtn").innerText = "Learn more";
+        }
+    });
+    document.body.appendChild(LearnMoreBtn);
+        </script>
+    </body>
+</html>
