@@ -1,0 +1,50 @@
+.card {
+  height: 300px;
+  width: 525px;
+  margin: 15px;
+  background-color: rgb(227, 227, 227);
+  border-radius: 15px;
+}
+#front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#front img {
+  width: 400px;
+  height: 150px;
+}
+#back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.back-logo {
+  width: 150px;
+  height: 100px;
+  padding: 40px;
+}
+.back-logo img {
+  width: 150px;
+  height: 100px;
+}
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.job-title {
+  font-family:Arial, Helvetica, sans-serif;
+}
+.contact-info {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#front:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+#back:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
